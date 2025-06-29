@@ -1,26 +1,22 @@
 package org.example.springbootstudy;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Objects;
 
 @RestController
 public class HelloController {
 
     private final HelloService helloService;
-    private final ApplicationContext applicationContext;
 
-    public HelloController(HelloService helloService, ApplicationContext applicationContext) {
+    public HelloController(HelloService helloService) {
         this.helloService = helloService;
-        this.applicationContext = applicationContext;
-
-        System.out.println("applicationContext = " + applicationContext);
     }
 
     @GetMapping("/hello")
     public String hello(String msg) {
-        return helloService.sayHello(Objects.requireNonNull(msg));
+        if (msg == null || msg.trim().isEmpty()) {
+            throw new IllegalArgumentException();
+        }
+        return helloService.sayHello((msg));
     }
 }
