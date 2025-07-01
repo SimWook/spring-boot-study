@@ -1,4 +1,4 @@
-package org.example.springbootstudy;
+package org.example.springbootstudy.helloboot;
 
 import org.example.springbootstudy.config.MySpringBootApplication;
 

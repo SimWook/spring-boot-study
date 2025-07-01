@@ -1,0 +1,2 @@
+org.example.springbootstudy.config.autoconfig.TomcatWebServerConfig
+org.example.springbootstudy.config.autoconfig.DispatcherServletConfig
