@@ -1,4 +1,4 @@
-package org.example.springbootstudy;
+package org.example.springbootstudy.helloboot;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

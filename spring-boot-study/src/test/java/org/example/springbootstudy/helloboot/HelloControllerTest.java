@@ -1,7 +1,6 @@
-package org.example.springbootstudy;
+package org.example.springbootstudy.helloboot;
 
 import org.assertj.core.api.Assertions;
-import org.example.springbootstudy.helloboot.HelloController;
 import org.junit.jupiter.api.Test;
 
 public class HelloControllerTest {
