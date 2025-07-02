@@ -1,3 +1,5 @@
+org.example.springbootstudy.config.autoconfig.PropertyPostProcessorConfig
+org.example.springbootstudy.config.autoconfig.PropertyPlaceholderConfig
 org.example.springbootstudy.config.autoconfig.TomcatWebServerConfig
 org.example.springbootstudy.config.autoconfig.JettyWebServerConfig
 org.example.springbootstudy.config.autoconfig.DispatcherServletConfig
