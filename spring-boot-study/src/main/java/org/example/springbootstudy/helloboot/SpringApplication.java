@@ -7,15 +7,13 @@ import org.springframework.core.env.Environment;
 
 import static org.springframework.boot.SpringApplication.run;
 
-
-@MySpringBootApplication
+@MySpringBootApplication()
 public class SpringApplication {
 
     @Bean
     ApplicationRunner applicationRunner(Environment environment) {
         return args -> {
             String name = environment.getProperty("my.name");
-            System.out.println("my.name = " + name);
         };
     }
 
