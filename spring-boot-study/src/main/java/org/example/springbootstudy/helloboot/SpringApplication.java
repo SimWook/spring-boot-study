@@ -7,15 +7,8 @@ import org.springframework.core.env.Environment;
 
 import static org.springframework.boot.SpringApplication.run;
 
-@MySpringBootApplication()
+@MySpringBootApplication
 public class SpringApplication {
-
-    @Bean
-    ApplicationRunner applicationRunner(Environment environment) {
-        return args -> {
-            String name = environment.getProperty("my.name");
-        };
-    }
 
     public static void main(String[] args) {
         run(SpringApplication.class, args);
