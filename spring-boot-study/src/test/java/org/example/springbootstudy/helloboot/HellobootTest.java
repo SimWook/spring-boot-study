@@ -11,10 +11,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+@Deprecated
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = SpringApplication.class)
+@ContextConfiguration(classes = HelloBootApplication.class)
 @TestPropertySource("classpath:/application.properties")
 @Transactional
 public @interface HellobootTest {

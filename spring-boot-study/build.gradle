@@ -29,3 +29,14 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+sourceSets {
+    main {
+        java {
+            exclude 'org/example/springbootstudy/config/**'
+        }
+        resources {
+            exclude 'META-INF/spring/org.example.springbootstudy.config.MyAutoConfiguration.imports'
+        }
+    }
+}
